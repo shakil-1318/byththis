@@ -50,6 +50,15 @@ html{
     margin: 30px auto;
 }
 
+#toggle-menu{
+    display: none;
+}
+.toggle-menu-btn{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+}
+
 
 
 /* header style */

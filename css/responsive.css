@@ -1,16 +1,35 @@
 @media (max-width: 940px){
-    nav{
-        display: none;
-    }
+    
     .service-container{
         grid-template-columns: repeat(2, 1fr);
     }
     .work-container{
         grid-template-columns: repeat(3, 1fr);
     }
+    .toggle-menu-btn{
+        display: block;
+        padding: 0 50px;
+    }
+    .navigation{
+        position: absolute;
+        background-color: rgba(0, 0, 0, .739);
+        width: 100%;
+        padding: 0 ;
+        left: 0;
+        top: 60px;
+        transform: translateY(-500px);
+        transition: .3s linear;
+    }
+    #toggle-menu:checked ~ .navigation{
+        transform: translateY(0px);
+    }
+    .navigation li{
+        display: block;
+        margin: 20px 0 20px 50px;
+    }
 }
 
-@media (max-width: 940px){
+@media (max-width: 700px){
     .service-container,.team-container,
     .work-container,.team-container,
     .pricing-container,
